@@ -37,6 +37,7 @@ cp -n $BP_DIR/scripts/static.json $BUILD_DIR/static.json
 
 echo "-----> Reinstalling packages"
 cd $BUILD_DIR
+yarn add replace
 yarn install
 
 # Skip dependency checking because it'll fail when devDependencies are missing (e.g. testing dependencies)
